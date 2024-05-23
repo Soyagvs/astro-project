@@ -1,9 +1,12 @@
 ---
 import Layout from "@/layouts/Layout.astro";
+import Header from "@/components/[Header].astro";
+import Footer from "@/components/Footer.astro";
 ---
 
 <Layout title="My Portflio" description="My Portfolio website personal">
 	<main>
+		<Header />
 		//nav
 		<div>
 			<h2>Hello there!</h2>
@@ -11,5 +14,5 @@ import Layout from "@/layouts/Layout.astro";
 			<span></span>
 		</div>
 	</main>
-	//footer
+	<Footer/>
 </Layout>
