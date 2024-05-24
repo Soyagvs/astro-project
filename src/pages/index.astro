@@ -8,18 +8,20 @@ import Logo from "@/netflix/Logo.astro";
 	description="watch movies,movies online,watch TV,TV online,TV shows online,watch TV shows,stream movies,stream tv,instant streaming,watch online,movies,watch movies Argentina,watch TV online,no download,full length movies"
 />
 <div class="relative">
+	<div class="absolute inset-0 overlay z-10"></div>
+	<!-- Superposición oscura -->
 	<img src="/img/bg.jpg" alt="" class="z-0 absolute object-cover" />
 
-	<header class="bg-transparent z-20 relative text-center">
-		<nav class="flex items-center justify-between p-4 mr-80">
+	<header class="bg-transparent z-20 relative text-center p-2">
+		<nav class="flex items-center justify-between p-4 mr-[350px]">
 			<Logo />
 			<button
-				class="text-white px-4 py-2 rounded w-40 h-8 text-sm border-white"
+				class="text-white px-4 py-2 rounded w-40 h-8 text-sm border border-gray-600 mr-6 justify-center"
 			>
 				English
 			</button>
 			<button
-				class="bg-red-500 text-white rounded w-24 h-8 text-sm font-bold"
+				class="bg-red-600 text-white rounded w-24 h-8 text-sm font-bold justify-center"
 			>
 				Sign in
 			</button>
@@ -28,38 +30,45 @@ import Logo from "@/netflix/Logo.astro";
 
 	<main>
 		<section
-			class="relative z-20 text-white text-center justify-center mt-44"
+			class="relative z-20 text-white text-center justify-center mt-[150px]"
 		>
-			<h1 class="text-5xl font-bold mb-5">
-				Unlimited movies, TV shows, and more
-			</h1>
+			<div>
+				<h1 class="text-[50px] font-extrabold mb-2 tracking-tighter">
+					Unlimited movies, TV shows, and more
+				</h1>
 
-			<h2 class="text-3xl mb-5">Watch anywhere. Cancel anytime.</h2>
+				<h2 class="text-2xl mb-3">Watch anywhere. Cancel anytime.</h2>
 
-			<h3 class="text-1xl mb-3">
-				Ready to watch? Enter your email to create or restart your
-				membership.
-			</h3>
-			<input
-				class="w-96 h-12 bg-transparent"
-				type="text"
-				name="text"
-				placeholder="Email Adress"
-			/>
-			<button
-				class="bg-red-500 text-white rounded w-40 h-12 text-xl font-bold"
-				>Get Started >
-			</button>
+				<h3 class="text-[20px] mb-3">
+					Ready to watch? Enter your email to create or restart your
+					membership.
+				</h3>
+			</div>
+			<div>
+				<input
+					class="w-[350px] h-14 bg-transparent border border-gray-600 pl-5 mr-1"
+					type="text"
+					name="text"
+					placeholder="Email Adress"
+				/>
+				<button
+					class="bg-red-600 text-white rounded w-52 h-14 text-2xl font-bold justify-center items-center "
+					>Get Started >
+				</button>
+			</div>
 		</section>
-		<hr />
+
 		<section
-			class="flex z-20 relative text-white text-start mt-52 bg-black"
+			class="flex z-20 relative text-white text-start mt-52 bg-black justify-center h-[520px] border-t-8 border-zinc-800"
 		>
-			<div class="flex flex-row-reverse pl-72">
-				<img src="/img/tv.png" alt="" />
+			<div class="flex flex-row-reverse items-center">
+				<img src="/img/tv.png" alt="" class="w-[550px]" />
 				<div class="flex flex-col">
-					<h2 class="text-5xl font-bold">Enjoy on your TV</h2>
-					<h3 class="text-3xl ">
+					<h2 class="text-5xl font-extrabold mb-5">
+						Enjoy on your TV
+					</h2>
+
+					<h3 class="text-2xl">
 						Watch on Smart TVs, Playstation, Xbox, Chromecast,<br />
 						Apple TV, Blu-ray players, and more.
 					</h3>
@@ -68,13 +77,13 @@ import Logo from "@/netflix/Logo.astro";
 		</section>
 
 		<section
-			class="flex z-20 relative text-white text-start bg-black h-96"
+			class="flex z-20 relative text-white text-start bg-black justify-center h-[520px] border-t-8 border-zinc-800"
 		>
-			<div class="flex flex-row pl-72">
-				<img src="/img/mobile-0819.jpg" alt="" />
+			<div class="flex flex-row items-center">
+				<img src="/img/mobile-0819.jpg" alt="" class="w-[550px]" />
 				<div class="flex flex-col">
-					<h2 class="text-5xl font-bold">
-						Download your shows to watch offline
+					<h2 class="text-5xl font-extrabold mb-5">
+						Download your shows to<br /> watch offline
 					</h2>
 					<h3 class="text-3xl">
 						Save your favorites easily and always have something<br
@@ -85,32 +94,42 @@ import Logo from "@/netflix/Logo.astro";
 		</section>
 
 		<section
-			class="flex z-20 relative text-white text-start bg-black h-96"
+			class="flex z-20 relative text-white text-start bg-black justify-center h-[520px] border-t-8 border-zinc-800"
 		>
-			<div class="flex flex-row-reverse pl-72">
-				<img src="/img/device-pile.png" alt="" />
+			<div class="flex flex-row-reverse items-center">
+				<img src="/img/device-pile.png" alt="" class="w-[550px]" />
 				<div class="flex flex-col">
-					<h2 class="text-5xl font-bold">Watch everywhere</h2>
+					<h2 class="text-5xl font-extrabold mb-5">
+						Watch everywhere
+					</h2>
 					<h3 class="text-3xl">
-						Stream unlimited movies and TV shows on your phone,
-						tablet, laptop, and TV.
+						Stream unlimited movies and TV shows on your <br
+						/>phone, tablet, laptop, and TV.
 					</h3>
 				</div>
 			</div>
 		</section>
 		<section
-			class="flex z-20 relative text-white text-start bg-black"
+			class="flex z-20 relative text-white text-start bg-black justify-center h-[520px] border-t-8 border-b-8 border-zinc-800"
 		>
-			<div class="flex flex-row ">
-				<img src="/img/kids.png" alt="" />
+			<div class="flex flex-row items-center">
+				<img src="/img/kids.png" alt="" class="w-[550px]" />
 				<div class="flex flex-col">
-					<h2 class="text-5xl font-bold">Create profiles for kids</h2>
+					<h2 class="text-5xl font-extrabold mb-5">
+						Create profiles for kids
+					</h2>
 					<h3 class="text-3xl">
-						Send kids on adventures with their favorite characters
-						in a space made just for them—free with your membership.
+						Send kids on adventures with their favorite characters<br
+						/>
+						in a space made just for them—free with your<br /> membership.
 					</h3>
 				</div>
 			</div>
 		</section>
 	</main>
 </div>
+<style>
+	.overlay {
+		background: rgba(0, 0, 0, 0.6);
+	}
+</style>
