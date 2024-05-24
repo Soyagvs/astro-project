@@ -1,9 +1,116 @@
 ---
 import Layout from "@/layouts/Layout.astro";
+import Logo from "@/netflix/Logo.astro";
 ---
 
-<Layout title="My Portflio" description="My Portfolio website personal">
+<Layout
+	title="Netflix Argentina - Watch TV Shows Online, Watch Movies Online"
+	description="watch movies,movies online,watch TV,TV online,TV shows online,watch TV shows,stream movies,stream tv,instant streaming,watch online,movies,watch movies Argentina,watch TV online,no download,full length movies"
+/>
+<div class="relative">
+	<img src="/img/bg.jpg" alt="" class="z-0 absolute object-cover" />
+
+	<header class="bg-transparent z-20 relative text-center">
+		<nav class="flex items-center justify-between p-4 mr-80">
+			<Logo />
+			<button
+				class="text-white px-4 py-2 rounded w-40 h-8 text-sm border-white"
+			>
+				English
+			</button>
+			<button
+				class="bg-red-500 text-white rounded w-24 h-8 text-sm font-bold"
+			>
+				Sign in
+			</button>
+		</nav>
+	</header>
+
 	<main>
-		
+		<section
+			class="relative z-20 text-white text-center justify-center mt-44"
+		>
+			<h1 class="text-5xl font-bold mb-5">
+				Unlimited movies, TV shows, and more
+			</h1>
+
+			<h2 class="text-3xl mb-5">Watch anywhere. Cancel anytime.</h2>
+
+			<h3 class="text-1xl mb-3">
+				Ready to watch? Enter your email to create or restart your
+				membership.
+			</h3>
+			<input
+				class="w-96 h-12 bg-transparent"
+				type="text"
+				name="text"
+				placeholder="Email Adress"
+			/>
+			<button
+				class="bg-red-500 text-white rounded w-40 h-12 text-xl font-bold"
+				>Get Started >
+			</button>
+		</section>
+		<hr />
+		<section
+			class="flex z-20 relative text-white text-start mt-52 bg-black"
+		>
+			<div class="flex flex-row-reverse pl-72">
+				<img src="/img/tv.png" alt="" />
+				<div class="flex flex-col">
+					<h2 class="text-5xl font-bold">Enjoy on your TV</h2>
+					<h3 class="text-3xl ">
+						Watch on Smart TVs, Playstation, Xbox, Chromecast,<br />
+						Apple TV, Blu-ray players, and more.
+					</h3>
+				</div>
+			</div>
+		</section>
+
+		<section
+			class="flex z-20 relative text-white text-start bg-black h-96"
+		>
+			<div class="flex flex-row pl-72">
+				<img src="/img/mobile-0819.jpg" alt="" />
+				<div class="flex flex-col">
+					<h2 class="text-5xl font-bold">
+						Download your shows to watch offline
+					</h2>
+					<h3 class="text-3xl">
+						Save your favorites easily and always have something<br
+						/> to watch.
+					</h3>
+				</div>
+			</div>
+		</section>
+
+		<section
+			class="flex z-20 relative text-white text-start bg-black h-96"
+		>
+			<div class="flex flex-row-reverse pl-72">
+				<img src="/img/device-pile.png" alt="" />
+				<div class="flex flex-col">
+					<h2 class="text-5xl font-bold">Watch everywhere</h2>
+					<h3 class="text-3xl">
+						Stream unlimited movies and TV shows on your phone,
+						tablet, laptop, and TV.
+					</h3>
+				</div>
+			</div>
+		</section>
+		<section
+			class="flex z-20 relative text-white text-start bg-black"
+		>
+			<div class="flex flex-row ">
+				<img src="/img/kids.png" alt="" />
+				<div class="flex flex-col">
+					<h2 class="text-5xl font-bold">Create profiles for kids</h2>
+					<h3 class="text-3xl">
+						Send kids on adventures with their favorite characters
+						in a space made just for them—free with your membership.
+					</h3>
+				</div>
+			</div>
+		</section>
 	</main>
-</Layout>
+</div>
