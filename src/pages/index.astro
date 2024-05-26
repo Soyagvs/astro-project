@@ -10,10 +10,8 @@ import Footer from "@/components/Footer.astro";
 	description="watch movies,movies online,watch TV,TV online,TV shows online,watch TV shows,stream movies,stream tv,instant streaming,watch online,movies,watch movies Argentina,watch TV online,no download,full length movies"
 >
 
-<div class="relative">
-	<div class="absolute inset-0 overlay z-10"></div>
-	<!-- Superposición oscura -->
-	<img src="/img/bg.jpg" alt="Image background the Header" class="z-0 absolute object-cover h-[800px] xl:h-[800px] md:h-[510px] lg:h-[700px]" />
+<div>
+	<img src="/img/bg.jpg" alt="Image background the Header"/>
 	<Header />
 	<main>
 		<Sections />
@@ -22,8 +20,3 @@ import Footer from "@/components/Footer.astro";
 </div>
 </Layout>
 
-<style is:global>
-	.overlay {
-		background: rgba(0, 0, 0, 0.6);
-	}
-</style>
