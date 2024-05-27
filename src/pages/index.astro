@@ -9,14 +9,27 @@ import Footer from "@/components/Footer.astro";
 	title="Netflix Argentina - Watch TV Shows Online, Watch Movies Online"
 	description="watch movies,movies online,watch TV,TV online,TV shows online,watch TV shows,stream movies,stream tv,instant streaming,watch online,movies,watch movies Argentina,watch TV online,no download,full length movies"
 >
-
-<div>
-	<img src="/img/bg.jpg" alt="Image background the Header"/>
 	<Header />
-	<main>
+	<div class="absolute top-0">
+		<div class="absolute inset-0 overlay"></div>
+		<img
+			src="/img/bg.jpg"
+			alt="Image background the main"
+			class="w-full top-0 object-cover h-[470px]"
+		/>
+	</div>
+	<main class="relative z-10 flex flex-col">
 		<Sections />
 	</main>
-	<Footer/>
-</div>
+	<Footer />
 </Layout>
-
+<style>
+	.inner-shadow {
+		box-shadow:
+			inset 0 4px 6px rgba(0, 0, 0, 0.5),
+			inset 0 -4px 6px rgba(0, 0, 0, 0.5);
+	}
+	.overlay {
+		background: rgba(0, 0, 0, 0.5);
+	}
+</style>
