@@ -1,0 +1,37 @@
+---
+import Layout from "@/layouts/Layout.astro";
+---
+
+<Layout
+	title="Netflix Sitio no oficial"
+	description="Este sitio es una copia de la pagina de Netflix"
+>
+	<main>
+		<div
+			class="flex flex-col items-center justify-center h-screen space-y-4"
+		>
+			<p class="text-slate-300 text-center text-5xl font-serif leading-tight font-semibold">
+				Estas a punto de ingresar a una copia de la página de 
+				<span class="text-red-600 text-bold">Netflix</span>
+				 NO es oficial, es elaborada por Agustin Martinez &copy; 2024
+			</p>
+			<button
+				id="redirectButton"
+				class="text-white bg-red-600 rounded px-4 py-2 w-40 h-12 transform transition-transform duration-300 hover:scale-110"
+			>
+				Ingresar
+			</button>
+		</div>
+	</main>
+</Layout>
+
+<script>
+	document.addEventListener("DOMContentLoaded", function () {
+		const button = document.querySelector("#redirectButton");
+		if (button) {
+			button.addEventListener("click", function () {
+				window.location.href = "/paginaInicio";
+			});
+		}
+	});
+</script>
