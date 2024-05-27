@@ -2,10 +2,20 @@
 import Logo from "@/netflix/Logo.astro";
 ---
 
-<header>
-    <nav class="flex flex-row">
+<header class="top-6 relative z-10">
+    <nav class="flex flex-row justify-around px-1">
         <Logo />
-        <button> English </button>
-        <button> Sign in </button>
+        <div class="flex flex-row space-x-2">
+            <button
+                class="text-white border border-neutral-600 rounded w-20 h-8 text-sm"
+            >
+                English
+            </button>
+            <button
+                class="bg-red-600 text-white border border-red-600 rounded w-20 h-8 text-sm font-bold"
+            >
+                Sign in
+            </button>
+        </div>
     </nav>
 </header>
